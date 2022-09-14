@@ -1,5 +1,4 @@
 # Screenshots
-To help review your infrastructure, please include the following screenshots in this directory::
 
 ## Deployment Pipeline
 * DockerHub showing containers that you have pushed

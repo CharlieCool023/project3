@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: ConfigMap
 data:
-  AWS_BUCKET: {{AWS_BUCKET}}
-  AWS_PROFILE: {{AWS_PROFILE}}
-  AWS_REGION: {{AWS_REGION}}
-  POSTGRESS_DB: {{POSTGRESS_DB}}
-  POSTGRESS_HOST: {{POSTGRESS_HOST}}
-  URL: {{APP_URL}}
+  AWS_BUCKET: arn:aws:s3:::webchi
+  AWS_PROFILE: default
+  AWS_REGION: us-east-1
+  POSTGRESS_DB: postgres
+  POSTGRESS_HOST: webchi.c45vpqc5llaf.us-east-1.rds.amazonaws.com
+  URL: http://localhost:8100
 metadata:
   name: env-config
   
