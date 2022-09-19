@@ -2,7 +2,7 @@
 # DO NOT STORE YOUR CREDENTIALS INTO GIT
 export POSTGRES_USERNAME=postgres
 export POSTGRES_PASSWORD=protected
-export POSTGRES_HOST=webchi.c45vpqc5llaf.us-east-1.rds.amazonaws.com
+export POSTGRES_HOST=webchi.c0hrclybrue6.us-east-1.rds.amazonaws.com
 export POSTGRES_DB=postgres
 export AWS_BUCKET=arn:aws:s3:::webchi
 export AWS_REGION=us-east-1

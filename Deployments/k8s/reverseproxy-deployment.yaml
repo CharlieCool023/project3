@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: reverseproxy
-          image: charliecool023/reverseproxy
+          image: charliecool023/udagram-reverseproxy:v3
           ports:
             - containerPort: 8080
           resources:

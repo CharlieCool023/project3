@@ -13,46 +13,21 @@ spec:
         run: backend-user
     spec:
       containers:
-      - image: charliecool023/udagram-api-user:v2
-        name: backend-user 
-        imagePullPolicy: Always  
-        resources:
-          requests:
-            memory: "64Mi"
-            cpu: "250m"
-          limits:
-            memory: "1024Mi"
-            cpu: "500m"      
-        env:
-        - name: URL
-          valueFrom:
-            configMapKeyRef:
-              name: env-config
-              key: URL 
-        - name: JWT_SECRET
-          valueFrom:
-            secretKeyRef:
-              name: env-secret
-              key: JWT_SECRET
-        - name: POSTGRESS_DB
-          valueFrom:
-            configMapKeyRef:
-              name: env-config
-              key: POSTGRESS_DB
-        - name: POSTGRESS_HOST
-          valueFrom:
-            configMapKeyRef:
-              name: env-config
-              key: POSTGRESS_HOST
-        - name: POSTGRESS_PASSWORD
-          valueFrom:
-            secretKeyRef:
-              name: env-secret
-              key: POSTGRESS_PASSWORD
-        - name: POSTGRESS_USERNAME
-          valueFrom:
-            secretKeyRef:
-              name: env-secret
-              key: POSTGRESS_USERNAME
-      restartPolicy: Always
-
+        - name: backend-user
+          image: sade1/udagram-api-user:v1
+          ports:
+            - containerPort: 80
+          resources:
+            limits:
+              cpu: 1000m
+            requests:
+              cpu: 500m
+          env:
+            - name: POSTGRES_USERNAME
+              value: "postgres"
+            - name: POSTGRES_PASSWORD
+              value: "protected"
+            - name: POSTGRES_HOST
+              value: "webchi.c45vpqc5llaf.us-east-1.rds.amazonaws.com"
+            - name: POSTGRES_DB
+              value: "postgres"

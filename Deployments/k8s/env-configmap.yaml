@@ -5,7 +5,7 @@ data:
   AWS_PROFILE: default
   AWS_REGION: us-east-1
   POSTGRESS_DB: postgres
-  POSTGRESS_HOST: webchi.c45vpqc5llaf.us-east-1.rds.amazonaws.com
+  POSTGRESS_HOST: webchi.c0hrclybrue6.us-east-1.rds.amazonaws.com
   URL: http://localhost:8100
 metadata:
   name: env-config
