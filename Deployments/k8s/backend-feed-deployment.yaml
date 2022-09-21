@@ -28,6 +28,6 @@ spec:
             - name: POSTGRES_PASSWORD
               value: "protected"
             - name: POSTGRES_HOST
-              value: "webchi.c45vpqc5llaf.us-east-1.rds.amazonaws.com"
+              value: "webchi.c0hrclybrue6.us-east-1.rds.amazonaws.com"
             - name: POSTGRES_DB
               value: "postgres"
